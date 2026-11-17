@@ -1,16 +1,20 @@
-OceanScope
-OceanScope is an ocean data dashboard focused on sea-surface temperature.
-Purpose
-The goal is to practice web development while presenting marine environmental data in a simple and understandable way.
-Skills
+# OceanScope
+
+OceanScope is a web-based ocean temperature dashboard.
+
+## Purpose
+
+The purpose of this project is to display and explore ocean temperature data in a simple and understandable format.
+
+## Skills
 
 - HTML
 - CSS
 - JavaScript
-- Data visualization
-- Marine data
+- Data Visualization
+- Marine Data
 - Git and GitHub
-Status
+
+## Status
+
 Currently in development.
-Future Goals
-Add temperature data, charts, filters, and responsive design.
