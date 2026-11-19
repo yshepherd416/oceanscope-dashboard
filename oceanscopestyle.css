@@ -1,0 +1,241 @@
+/* ========================================
+   OceanScope
+   Ocean Temperature Dashboard
+   Main Stylesheet
+======================================== */
+
+
+/* ---------- GENERAL PAGE ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f7f9;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: #064b6b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+header p {
+    margin: 10px 0 0;
+    color: #d8eef5;
+    font-size: 18px;
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #064b6b;
+    margin-top: 0;
+    border-bottom: 2px solid #1b98b5;
+    padding-bottom: 10px;
+}
+
+
+/* ---------- DASHBOARD CONTROLS ---------- */
+
+.dashboard-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.dashboard-controls label {
+    font-weight: bold;
+    color: #064b6b;
+}
+
+.dashboard-controls input,
+.dashboard-controls select {
+    padding: 10px;
+    border: 1px solid #b8c7cd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* ---------- TEMPERATURE DISPLAY ---------- */
+
+#temperature-display {
+    background-color: #edf7fa;
+    border-left: 5px solid #1b98b5;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.temperature-value {
+    color: #0b7696;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* ---------- TEMPERATURE CARDS ---------- */
+
+.temperature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.temperature-card {
+    background-color: #f8fbfc;
+    border: 1px solid #d8e5e9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.temperature-card h3 {
+    color: #064b6b;
+    margin-top: 0;
+}
+
+
+/* ---------- DATA VISUALIZATION ---------- */
+
+#temperature-chart {
+    min-height: 350px;
+    background-color: #f8fbfc;
+    border: 1px solid #d8e5e9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+/* ---------- OCEAN MAP ---------- */
+
+#ocean-map {
+    min-height: 400px;
+    background-color: #dceff5;
+    border: 2px solid #1b98b5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* ---------- DATA SUMMARY ---------- */
+
+#data-summary {
+    min-height: 120px;
+    background-color: #eef7f8;
+    border-left: 5px solid #1b98b5;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+button {
+    background-color: #087f9c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06677f;
+}
+
+
+/* ---------- TEMPERATURE ACCENTS ---------- */
+
+.temperature-cool {
+    color: #1976b9;
+}
+
+.temperature-moderate {
+    color: #159a9c;
+}
+
+.temperature-warm {
+    color: #e67e45;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #03384f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .dashboard-controls {
+        flex-direction: column;
+    }
+
+    .dashboard-controls input,
+    .dashboard-controls select {
+        width: 100%;
+    }
+
+    #temperature-chart,
+    #ocean-map {
+        min-height: 275px;
+    }
+}
